@@ -1,0 +1,20 @@
+{
+    "labels":{
+        "Left Lower Jaw Front":0,
+        "Left Lower Jaw Top":1,
+        "Left Lower Jaw Back":2,
+        "Left Upper Jaw Front":3,
+        "Left Upper Jaw Top":4,
+        "Left Upper Jaw Back":5,
+        "Right Lower Jaw Front":6,
+        "Right Lower Jaw Top":7,
+        "Right Lower Jaw Back":8,
+        "Right Upper Jaw Front":9,
+        "Right Upper Jaw Top":10,
+        "Right Upper Jaw Back":11,
+        "Lower Incisors Front":12,
+        "Lower Incisors Back":13,
+        "Upper Incisors Front":14,
+        "Upper Incisors Back":15
+    }
+}
