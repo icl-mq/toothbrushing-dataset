@@ -50,34 +50,28 @@ def read_sensor_data(
     experiment_path = os.path.join(path, experiment)
     accelerometer_filename = glob.glob(os.path.join(experiment_path, f"*{device}*_Accelerometer.csv"))[0]
     gyroscope_filename = glob.glob(os.path.join(experiment_path, f"*{device}*_Gyroscope.csv"))[0]
-    magnetometer_filename = glob.glob(os.path.join(experiment_path, f"*{device}*_Magnetometer.csv"))[0]
 
     # read the three sensors
     accelerometer = _read_file(accelerometer_filename)
     gyroscope = _read_file(gyroscope_filename)
-    magnetometer = _read_file(magnetometer_filename)
 
     # in order to join we need to resample and interpolate
     start = np.max([
         accelerometer.index.min().ceil(freq), 
         gyroscope.index.min().ceil(freq), 
-        magnetometer.index.min().ceil(freq)
         ])
     end = np.min([
         accelerometer.index.max().floor(freq), 
         gyroscope.index.max().floor(freq), 
-        magnetometer.index.max().floor(freq)
         ])
     new_index = pd.date_range(start, end, freq=freq)
 
     accelerometer = _interpolate(accelerometer, new_index)
     gyroscope = _interpolate(gyroscope, new_index)
-    magnetometer = _interpolate(magnetometer, new_index, limit=10) # sample rate is 1/10th of the other 2 sensors
 
     df = pd.concat((
         accelerometer,
         gyroscope,
-        magnetometer
         ), axis=1)
     return df
 
