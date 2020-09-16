@@ -48,8 +48,8 @@ def read_sensor_data(
     ) ->  pd.DataFrame:         
     """ loads raw sensor data into dataframe """
     experiment_path = os.path.join(path, experiment)
-    accelerometer_filename = glob.glob(os.path.join(experiment_path, f"*{device}*_Accelerometer.csv"))[0]
-    gyroscope_filename = glob.glob(os.path.join(experiment_path, f"*{device}*_Gyroscope.csv"))[0]
+    accelerometer_filename = glob.glob(os.path.join(experiment_path, f"*{device}*-A.csv"))[0]
+    gyroscope_filename = glob.glob(os.path.join(experiment_path, f"*{device}*-G.csv"))[0]
 
     # read the three sensors
     accelerometer = _read_file(accelerometer_filename)
