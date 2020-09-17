@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the dataset to accompany the paper Dataset: Tooth Brushing Monitoring using A Smart Toothbrush. Data from 57 toothbrushing sessions recording using two devices - wrist worn and attached to the brush. The device has a 3D accelerometer and gyroscope.
+This repository contains the dataset to accompany the paper Dataset: Tooth Brushing Monitoring using A Smart Toothbrush. Data from 62 toothbrushing sessions recording using two devices - wrist worn and attached to the brush. The device has a 3D accelerometer and gyroscope.
 
 ## Getting Started
 
@@ -18,8 +18,8 @@ Each experiment is contained in a separate folder under [this](/data). The folde
 S{subject}-S{session}-{gender}-{hand}-{position}-{age}-{brush}-{location}-{sensor}
 
 where:
-  subject: id of subject (1-16)
-  session: is of session for subject (1-5)
+  subject: id of subject (1--17)
+  session: is of session for subject (1--5)
   gender: subjects gender (M or F)
   hand: subject is right or left handed (R or L)
   age: subject age
