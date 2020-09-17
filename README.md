@@ -15,14 +15,16 @@ The datasets are located in the data folder. Each subfolder represents a single 
 Each experiment is contained in a separate folder under [this](/data). The folders and files within the folder have the following naming convention:
 
 ```
-S{subject}-S{session}-{gender}-{hand}-{position}-{age}-{brush}-{location}-{sensor}
+S{subject}-S{session}-{gender}-{hand}-{sensor-location}-{age}-{brush}-{location}-{sensor}
 
 where:
   subject: id of subject (1--17)
   session: is of session for subject (1--5)
   gender: subjects gender (M or F)
   hand: subject is right or left handed (R or L)
+  sensor-location: device location, attached to brush or on wrist (A or W)
   age: subject age
+  brush: electric or manual (E or M)
   location: id of location (1-5)
   sensor: accelerometer or gyroscope (A or G)
 ```
