@@ -2,13 +2,11 @@
 
 ## Description
 
-This repository contains the dataset to accompany the paper Dataset: Tooth Brushing Monitoring using A Smart Toothbrush. Data from 57 toothbrushing sessions recording using two devices - wrist worn and attached to the brush. The device has a 3D acceleromter and gyroscope.
-
-GIT Large File Support (git-lfs) must be installed to use the data. See https://docs.github.com/en/github/managing-large-files/installing-git-large-file-storage for installation instructions.
+This repository contains the dataset to accompany the paper Dataset: Tooth Brushing Monitoring using A Smart Toothbrush. Data from 57 toothbrushing sessions recording using two devices - wrist worn and attached to the brush. The device has a 3D accelerometer and gyroscope.
 
 ## Getting Started
 
-We recommend using python 3.x and start with the [this](/src/example-1.ipynb) notebook. The data files are stored using `git-lfs` which needs to be installed separately. Please consult you platform git documentation in order to enable `git-lfs`.
+We recommend using python 3.6 and start with the [this](/src/example-1.ipynb) notebook. The data files are stored using `git-lfs` which needs to be installed separately. Please consult https://docs.github.com/en/github/managing-large-files/installing-git-large-file-storage in order to enable `git-lfs` on your platform.
 
 The datasets are located in the data folder. Each subfolder represents a single brushing session. The folder naming convention is as follows:
 
