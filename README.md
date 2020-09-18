@@ -26,6 +26,11 @@ where:
   age: subject age
   brush: electric or manual (E or M)
   location: id of location (1-5)
+    1: North Facing (Washroom 1 Building 1)
+    2: West Facing (Washroom 2 Building 2)
+    3: North Facing (Washroom 3 Building 3)
+    4: East Facing (Washroom 4 Building 2)
+    5: North Facing (Washroom 5 Building 2)
   sensor: accelerometer or gyroscope (A or G)
 ```
 
