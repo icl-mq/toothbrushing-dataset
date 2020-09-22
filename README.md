@@ -2,7 +2,8 @@
 
 ## Description
 
-This repository contains the dataset to accompany the paper Dataset: Tooth Brushing Monitoring using A Smart Toothbrush. Data from 62 toothbrushing sessions recording using two devices - wrist worn and attached to the brush. The device has a 3D accelerometer and gyroscope.
+This repository contains the dataset to accompany the paper ``Dataset: Toothbrushing Data and Analysis of its Potential Use in
+Human Activity Recognition Applications``. Data from 62 toothbrushing sessions recording using two devices - wrist worn and attached to the brush. The device has a 3D accelerometer and gyroscope.
 
 ## Getting Started
 
