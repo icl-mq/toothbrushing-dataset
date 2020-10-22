@@ -11,9 +11,9 @@ We recommend using python 3.6 and start with the [/src/example-1.ipynb](/src/exa
 
 The data files are stored using `git-lfs` which needs to be installed separately. Please consult https://docs.github.com/en/github/managing-large-files/installing-git-large-file-storage in order to enable `git-lfs` on your platform.
 
-The datasets are located in the data folder. Each subfolder represents a single brushing session. The folder naming convention is as follows:
+The datasets are located in the data folder. Each subfolder represents a single brushing session. The folder naming convention includes metadata as follows:
 
-## Detailed Documentation
+## Experiment Metadata
 
 Each experiment is contained in a separate folder under [/data](/data). The folders and files within the folder have the following naming convention:
 
@@ -38,3 +38,29 @@ where:
 ```
 
 Within each folder are 4 csv files containing the sensor data. The naming convention follows the parent folder convention. For labelled experiments an additional labels.json file is included contains the start and end timestamps for each activity and the activity name.
+
+## Unlabelled Activities
+
+Following the brushing protocol is difficult at first, in early experiments some users didn't follow the correct order and either skipped or duplicated activities. The following activities are included for completeness but are unlabelled:
+
+```
+S4-S2-F-R-AW-26-M-1-AG
+S5-S2-M-R-AW-40-M-2-AG
+S7-S1-M-R-AW-31-M-2-AG
+S7-S2-M-R-AW-31-M-2-AG
+S7-S3-M-R-AW-31-M-2-AG
+S8-S1-M-R-AW-31-M-2-AG
+S8-S2-M-R-AW-31-M-2-AG
+S9-S2-M-R-AW-30-M-2-AG
+S10-S1-M-R-AW-30-E-3-AG
+S11-S1-F-R-AW-30-M-3-AG
+S13-S1-F-R-AW-30-M-4-AG
+S13-S3-F-R-AW-30-M-4-AG
+S14-S2-F-R-AW-35-M-5-AG
+S15-S2-F-R-AW-30-M-5-AG
+S16-S1-F-R-AW-28-M-5-AG
+S16-S2-F-R-AW-28-M-5-AG
+S16-S2-F-R-AW-28-M-5-AG
+S16-S3-F-R-AW-28-M-5-AG
+S17-S2-M-R-AW-40-M-2-AG
+```
